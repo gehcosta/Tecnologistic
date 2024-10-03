@@ -1,0 +1,14 @@
+{
+  "name": "sceui",
+  "version": "1.0.0",
+  "description": "Interface de usuário IHM para o projeto do TCC UNIP",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Geovanne H. Costa, Yuri de S. Stavel, Gustavo Dellabarba, Victor W. G. Oliveira",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.4.0"
+  }
+}

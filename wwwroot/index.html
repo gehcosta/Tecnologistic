@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Technologist IHM</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="winbar__nav">
+                <menu class="winbar--menu">
+                    <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../app/win/minimize_icon.svg"></button></li>
+                    <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../app/win/maximize_icon.svg"></button></li>
+                    <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../app/win/close_icon.svg"></button></li>
+                </menu>
+            </nav>
+        </header>
+
+        <main id="main">
+            <div class="main">
+                <div class="main__sideimage"></div> <!-- Imagem lateral -->
+                
+                <section class="login__section"> <!-- Formulário de login -->
+                    
+                    <div><img class="login__tecnologistic" src="../resources/images/assets/Components/logo-tecnologisctic.png" alt="Logo Tecnologistic"></div>
+                    
+                    <img class="login__guest" src="../resources/images/assets/Components/user-guest.svg" alt="Foto usuário convidado">
+                    
+                    <div class="login__line"></div>
+                    
+                    <div>
+                        <form class="login__inputs" id="loginAccess">
+                            <input class="login_inputs--field" placeholder="Email" type="text">
+                            <input class="login_inputs--field" type="password" placeholder="Senha">
+                        </form>
+                    </div>
+    
+                    <div class="login__buttons">
+                        <div>
+                            <button class="login__buttons--login" onclick="homeAccess()">Entrar</button> <!-- Tirar href depois da validaÃ§Ã£o -->
+                            <button class="login__buttons--forgot" onclick="forgotPassword()">Esqueci minha senha</button>
+                        </div>
+                        <button class="login__buttons--register">Cadastrar</button>
+                    </div>
+    
+                </section>
+                
+            </div>
+        </main>
+
+    </body>
+
+</html>
+
+<script src="../app/win/winbar.js"></script>
+<script src="../app/Access/pageAccess.js"></script>

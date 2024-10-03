@@ -1,0 +1,9 @@
+.aside__hamburger {
+    display: flex;
+}
+
+.buttons__userProfile {
+    background-image: url("resources/images/assets/Components/user-white.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+}

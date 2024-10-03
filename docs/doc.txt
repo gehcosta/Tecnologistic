@@ -1,0 +1,23 @@
+## Regras de padrão para construção do programa SCEUI ##
+
+1. id: Identificadores únicos para estilização ou manipulação via JavaScript.
+2. atributo personalizado (opcional): Atributos personalizados começando com data- são usados para armazenar dados personalizados.
+3. name: Nomes para formulários e outros elementos que requerem identificação.
+4. class: Classes CSS para estilização.
+5. type: Tipo de elemento (por exemplo, input).
+6. src: Fonte para imagens, scripts e outros elementos carregados externamente.
+7. href: URLs para links.
+8. alt: Texto alternativo para imagens.
+9. value: Valor padrão para inputs.
+10. style: Estilos em linha (embora seja geralmente melhor usar CSS externo ou interno).
+11. title: Texto de dica exibido ao passar o mouse sobre o elemento.
+12. Demais atributos
+
+
+
+Features futuras:
+
+  index.html ->
+   - Alterar o menu do windows para botões dinâmicos
+   - Adicionar um botão de dúvidas para apresentar sobre o projeto e versão atual - dinâmico
+   - Ao entrar no programa, insere uma foto aleatória de background
