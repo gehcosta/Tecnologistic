@@ -1,16 +1,54 @@
-<aside>
-    <div class="aside__hamburger">
-        <button class="">H</button>
-        <p class="">Menu</p>
-    </div>
-    
-    <div class="aside__line"></div>
-    
-    <div class="aside__buttons">
-        <button class="aside__buttons"><span class="buttons__userProfile"></span>Perfil do Usuário</button>
-        <button class="aside__buttons"><img src="../../resources/images/assets/Components/user-white.svg">Dashboard</button>
-        <button class="aside__buttons"><img src="../../resources/images/assets/Components/user-white.svg">Webcam</button>
-        <button class="aside__buttons"><img src="../../resources/images/assets/Components/user-white.svg">Estoque</button>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Technologist IHM</title>
+</head>
+
+<body>
+<header>
+    <nav class="winbar__nav">
+        <menu class="winbar--menu">
+            <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../../app/win/minimize_icon.svg"></button></li>
+            <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../../app/win/maximize_icon.svg"></button></li>
+            <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../../app/win/close_icon.svg"></button></li>
+        </menu>
+    </nav>
+</header>
+
+<main>
+    <aside class="sideBar">
+        <div>
+            <span class="sideBar__hamburger flex__center">
+                <button class=""><img src="../../resources/images/assets/Components/hamburguer.svg"></button>
+                <p class="hamburger__text">Menu</p>
+            </span>
+            
+            <div class="sideBar__bottom">
+                <div class="bottom__line"></div>
         
-    <div>
-</aside>
+                <div class="bottom__container">
+                    <button class="bottom__button"><img class="button__userProfile" src="../../resources/images/assets/Components/user-white.svg">Perfil do Usuário</button>
+                    <button class="bottom__button"><img class="button__graph" src="../../resources/images/assets/Components/Graph.svg">Dashboard</button>
+                    <button class="bottom__button"><img class="button__webcam" src="../../resources/images/assets/Components/webcam.svg">Webcam</button>
+                    <button class="bottom__button"><img class="button__stock" src="../../resources/images/assets/Components/stock.svg">Estoque</button>
+                <div>
+            </div>
+        </div>
+                
+        <div class="logout__container">
+            <button class="logout__button"><img src="../../resources/images/assets/Components/logout.png"></button>
+            <p class="logout__text">Logout</p>
+        </div>
+                </div>
+    </aside>
+</main>
+
+</body>
+
+</html>
+
+<script src="../../app/win/winbar.js"></script>

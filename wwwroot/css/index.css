@@ -32,7 +32,7 @@
     background-image: url('../../resources/images/assets/Components/line.svg');
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 24rem;
     height: 1rem;
     margin-top: 2rem;
 }
@@ -46,7 +46,7 @@
 }
 
 .login_inputs--field {
-    width: 25.5rem;
+    width: 23.5rem;
     padding-left: 10px;
     height: 2.7rem;
     margin: 1rem 2rem 0 2rem;

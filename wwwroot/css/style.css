@@ -71,6 +71,7 @@ header {
 }
 
 body {
+    background-color: #f5f5f5;
     line-height: 1;
     overflow: hidden;
 }

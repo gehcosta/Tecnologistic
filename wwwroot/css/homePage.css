@@ -1,9 +1,77 @@
-.aside__hamburger {
+.sideBar {
+    padding-left: 1.125rem;
+    width: 16.813rem;
+    height: 100vh;
+    box-shadow: -2px 14px 19px rgba(0, 0, 0, 0.5);}
+
+.sideBar__hamburger {
     display: flex;
+    align-items: center;
+    gap: 3.6rem;
+    padding-top: 2.5rem;
 }
 
-.buttons__userProfile {
-    background-image: url("resources/images/assets/Components/user-white.svg");
+.hamburger__text {
+    font-weight: 500;
+    color: var(--color-second);
+}
+
+.sideBar__bottom {
+    flex-direction: column;
+    align-items: center;
+    width: 16.8rem;
+}
+
+.bottom__line {
+    background-image: url('../../resources/images/assets/Components/line.svg');
+    background-position: center;
     background-repeat: no-repeat;
-    width: 50px;
+    height: 1rem;
+    margin: 2rem 0;
+}
+
+.bottom__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom__button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 3rem;
+    background-color: #7CC676;
+    color: var(--color-first);
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bottom__button:hover {
+    background-color: #4B9447;
+}
+
+.bottom__line, .bottom__button {
+    width: 15rem;
+
+} 
+.button__userProfile, .button__graph, .button__webcam, .button__stock {
+    padding: 5px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.button__userProfile {
+    width: 30px;
+}
+
+.logout__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logout__button:hover {
+    
 }
