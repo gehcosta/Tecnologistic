@@ -1,17 +1,57 @@
-<div>
-    <section>
-        <div>
-            <h3>Painel de status</h3>
+<link rel="stylesheet" href="../css/controlPage.css">
+
+<div class="controlPage">
+    <section class="controlPage__controlPanel">
+        <div class="panelControl__statusPanel">
+            <h3 class="statusPanel__title">Painel de status</h3>
+            <hr class="statusPanel__line">
+            <table>
+                <tbody>
+                <tr>
+                    <td>Hardware</td>
+                    <td>Status</td>
+                </tr>
+                <tr>    
+                    <td>Webcam</td>
+<!--                    <td>TODO: colocar dados aqui</td>-->
+                </tr>                
+                <tr>
+                    <td>Braço mecânico</td>
+<!--                    <td>TODO: colocar dados aqui</td>-->
+                </tr>                
+                <tr>
+                    <td>Alarme</td>
+<!--                    <td>TODO: colocar dados aqui</td>-->
+                </tr>                
+                <tr>
+                    <td>Sistema</td>
+<!--                    <td> TODO: colocar dados aqui</td>-->
+                </tr>               
+                <tr>
+                    <td>Esteira</td>
+<!--                    <td> TODO: colocar dados aqui</td>-->
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <div>
-            <h3>Painel de controle</h3>
+        
+        <div class="panelControl__panelControl">
+            <h3 class="panelControl__title">Painel de controle</h3>
+            <hr class="panelControl__line">
+            <div class="panelControl__buttons">
+                <button class="buttons__start" onclick="startEngine()"><img class="buttons__img" src="../../resources/images/assets/Components/start.svg">Ligar</button>
+                <button class="buttons__stop"  onclick="stopEngine()"><img class="buttons__img" src="../../resources/images/assets/Components/stop.svg">Parar</button>
+                <button class="buttons__off" onclick="offEngine()"><img class="buttons__img" src="../../resources/images/assets/Components/off.svg">Desligar</button>
+            </div>
         </div>
-        <div>
+        <div class="controlPage__camera">
 <!--            <iframe src="http://localhost:8080" width="100%" height="100%"></iframe>-->
+            <iframe src="https://www.retrogames.cc/embed/17022-aladdin-usa.html" width="100%" min-width="35rem"  height="400" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe> 
         </div>
     </section>
-    <section>
-        <h3>Log de registros</h3>
+    
+    <section class="controlPage__logPanel">
+        <h3 class="logPanel__title">Log de registros</h3>
         <table>
             <thead>
             <tr>

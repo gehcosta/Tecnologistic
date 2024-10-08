@@ -12,7 +12,7 @@ function createWindow() {
     height: 720,
     minHeight: 700,
     frame: false,
-    icon: path.join(__dirname, 'resources/icons/tecnologistic_icon.ico'),
+    icon: path.join(__dirname, 'resources/icons/tecnologistic_icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'app/win/preload.js'),
       nodeIntegration: false,

@@ -22,7 +22,6 @@ function homeAccess() {
 // Adicionar também o logout, que vai remover o token e o id do usuário do localStorage
 
 function accessPage(url) {
-    debugger;
     const pagePath = url !== "index" ? "../../wwwroot/pages/" + url + ".html" : "../../wwwroot/index.html";
     // const pagePath = "../../wwwroot/pages/" + url + ".html";
     fetch(pagePath)
@@ -33,7 +32,7 @@ function accessPage(url) {
             return response.text();
         })
         .then(data => {
-            document.getElementById('menuPages').innerHTML = data;
+            document.getElementById("menuPages").innerHTML = data;
         })
         .catch(error => {
             console.error('Erro ao carregar a página:', error);
@@ -44,6 +43,12 @@ function accessPage(url) {
                 window.close();
             }
         });
+}
+
+function logoutUser(){
+    // localStorage.removeItem('token');
+    // localStorage.removeItem('userId');
+    window.location.href = "../../wwwroot/index.html";
 }
 
 
