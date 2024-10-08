@@ -10,48 +10,47 @@
 </head>
 
 <body>
-<header>
-    <nav class="winbar__nav">
-        <menu class="winbar--menu">
-            <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../../app/win/minimize_icon.svg"></button></li>
-            <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../../app/win/maximize_icon.svg"></button></li>
-            <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../../app/win/close_icon.svg"></button></li>
-        </menu>
-    </nav>
-</header>
+    <header>
+        <nav class="winbar__nav">
+            <menu class="winbar--menu">
+                <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../../app/win/minimize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../../app/win/maximize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../../app/win/close_icon.svg"></button></li>
+            </menu>
+        </nav>
+    </header>
 
-<main>
-    <aside class="sideBar">
-        <div>
-            <span class="sideBar__hamburger flex__center">
-                <button class=""><img src="../../resources/images/assets/Components/hamburguer.svg"></button>
-                <p class="hamburger__text">Menu</p>
-            </span>
+    <main>
+        <aside class="sideBar">
+            <div>
+                <span class="sideBar__hamburger flex__center">
+                    <button class=""><img src="../../resources/images/assets/Components/hamburguer.svg"></button>
+                    <p class="hamburger__text">Menu</p>
+                </span>
+                
+                <div class="sideBar__bottom">
+                    <div class="bottom__line"></div>
             
-            <div class="sideBar__bottom">
-                <div class="bottom__line"></div>
-        
-                <div class="bottom__container">
-                    <button class="bottom__button" onclick="accessPage('controlPage')"><img class="button__userProfile" src="../../resources/images/assets/Components/user-white.svg">Perfil do Usuário</button>
-                    <button class="bottom__button" onclick="accessPage()"><img class="button__graph" src="../../resources/images/assets/Components/Graph.svg">Dashboard</button>
-                    <button class="bottom__button" onclick="accessPage()"><img class="button__webcam" src="../../resources/images/assets/Components/webcam.svg">Webcam</button>
-                    <button class="bottom__button" onclick="accessPage()"><img class="button__stock" src="../../resources/images/assets/Components/stock.svg">Estoque</button>
+                    <div class="bottom__container">
+                        <button class="bottom__button" onclick="accessPage('controlPage')"><img class="button__userProfile" src="../../resources/images/assets/Components/user-white.svg"><span class="bottom__button--text">Perfil do Usuário</span></button>
+                        <button class="bottom__button" onclick="accessPage()"><img class="button__graph" src="../../resources/images/assets/Components/Graph.svg"><span class="bottom__button--text">Dashboard</span></button>
+                        <button class="bottom__button" onclick="accessPage()"><img class="button__webcam" src="../../resources/images/assets/Components/webcam.svg"><span class="bottom__button--text">Webcam</span></button>
+                        <button class="bottom__button" onclick="accessPage()"><img class="button__stock" src="../../resources/images/assets/Components/stock.svg"><span class="bottom__button--text">Estoque</span></button>
+                    </div>
                 </div>
             </div>
-        </div>
-                
-        <div class="logout__container">
-            <button class="logout__button"><img src="../../resources/images/assets/Components/logout.png"></button>
-            <p class="logout__text">Logout</p>
-        </div>
-    </aside>
+                    
     
-    <section id="menuPages">
-    </section>
-</main>
+            <button class="logout__button"><img src="../../resources/images/assets/Components/logout.png"><p class="logout__text">Logout</p></button>
+        </aside>
+        
+        <section id="menuPages">
+        </section>
+    </main>
 
 </body>
 
 </html>
 
 <script src="../../app/win/winbar.js"></script>
+<script src="../js/sideBar.js"></script>

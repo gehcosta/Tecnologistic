@@ -13,9 +13,8 @@
 //         .catch(error => console.error('Erro ao carregar a página:', error));
 // }
 
-function homeAccess(url) {
-    const pagePath = "../wwwroot/pages/homePage.html";
-    window.location.href = pagePath;
+function homeAccess() {
+    window.location.href = "../wwwroot/pages/homePage.html";
 }
 
 // Do login vou receber o token e o id do usuário, que eu vou salvar no localStorage

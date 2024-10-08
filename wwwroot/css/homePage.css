@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding-left: 1.125rem;
-    width: 16.813rem;
+    /*width: 16.813rem;*/
+    width: 5rem;
     height: 100dvh;
     box-shadow: -2px 14px 19px rgba(0, 0, 0, 0.5);
 }
@@ -11,11 +12,12 @@
 .sideBar__hamburger {
     display: flex;
     align-items: center;
-    gap: 4.9rem;
-    padding-top: 2.5rem;
+    gap: 4rem;
+    margin: 2rem 0 1rem 9px;
 }
 
 .hamburger__text {
+    display: none;
     font-weight: 500;
     color: var(--color-second);
 }
@@ -27,14 +29,16 @@
 }
 
 .bottom__line {
+    /*display: none;*/
     background-image: url('../../resources/images/assets/Components/line.svg');
     background-position: center;
     background-repeat: no-repeat;
     height: 1rem;
-    margin: 2rem 0;
+    width: 4rem;
 }
 
 .bottom__container {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -50,16 +54,16 @@
     border-radius: 25px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    width: 4rem;
+}
+
+.bottom__button--text {
+    display: none;
 }
 
 .bottom__button:hover {
     background-color: #4B9447;
 }
-
-.bottom__line, .bottom__button {
-    width: 15rem;
-
-} 
 .button__userProfile, .button__graph, .button__webcam, .button__stock {
     padding: 5px;
     width: 30px;
@@ -70,13 +74,18 @@
     width: 30px;
 }
 
-.logout__container {
+.logout__button {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 6rem;
+    padding: 0 0 4rem 20px;
+    cursor: pointer;
 }
 
-.logout__button:hover {
-    
+.logout__text {
+    display: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-fourth);
 }
+
