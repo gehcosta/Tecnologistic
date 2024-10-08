@@ -23,14 +23,28 @@ function homeAccess(url) {
 // Adicionar também o logout, que vai remover o token e o id do usuário do localStorage
 
 function accessPage(url) {
-        const pagePath = "../wwwroot/pages/" + url + ".html";
-        fetch(pagePath)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menuPages').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar a página:', error));
-    } catch (error) {
-
+    debugger;
+    const pagePath = url !== "index" ? "../../wwwroot/pages/" + url + ".html" : "../../wwwroot/index.html";
+    // const pagePath = "../../wwwroot/pages/" + url + ".html";
+    fetch(pagePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao carregar a página');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('menuPages').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Erro ao carregar a página:', error);
+            let errorConfirm = confirm("Ocorreu um erro no carregamento da página. Voltar ao menu principal?");
+            if (errorConfirm) {
+                accessPage('index');
+            } else {
+                window.close();
+            }
+        });
 }
+
 
