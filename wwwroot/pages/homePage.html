@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../../app/win/winbar.js"></script>
+    <script src="../../app/Access/pageAccess.js"></script>
     <title>Technologist IHM</title>
 </head>
 
@@ -31,11 +33,11 @@
                 <div class="bottom__line"></div>
         
                 <div class="bottom__container">
-                    <button class="bottom__button"><img class="button__userProfile" src="../../resources/images/assets/Components/user-white.svg">Perfil do Usuário</button>
-                    <button class="bottom__button"><img class="button__graph" src="../../resources/images/assets/Components/Graph.svg">Dashboard</button>
-                    <button class="bottom__button"><img class="button__webcam" src="../../resources/images/assets/Components/webcam.svg">Webcam</button>
-                    <button class="bottom__button"><img class="button__stock" src="../../resources/images/assets/Components/stock.svg">Estoque</button>
-                <div>
+                    <button class="bottom__button" onclick="accessPage(controlPage)"><img class="button__userProfile" src="../../resources/images/assets/Components/user-white.svg">Perfil do Usuário</button>
+                    <button class="bottom__button" onclick="accessPage()"><img class="button__graph" src="../../resources/images/assets/Components/Graph.svg">Dashboard</button>
+                    <button class="bottom__button" onclick="accessPage()"><img class="button__webcam" src="../../resources/images/assets/Components/webcam.svg">Webcam</button>
+                    <button class="bottom__button" onclick="accessPage()"><img class="button__stock" src="../../resources/images/assets/Components/stock.svg">Estoque</button>
+                </div>
             </div>
         </div>
                 
@@ -43,12 +45,13 @@
             <button class="logout__button"><img src="../../resources/images/assets/Components/logout.png"></button>
             <p class="logout__text">Logout</p>
         </div>
-                </div>
     </aside>
+    
+    <section id="menuPages">
+    </section>
 </main>
 
 </body>
 
 </html>
 
-<script src="../../app/win/winbar.js"></script>

@@ -1,13 +1,17 @@
 .sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 1.125rem;
     width: 16.813rem;
-    height: 100vh;
-    box-shadow: -2px 14px 19px rgba(0, 0, 0, 0.5);}
+    height: 100dvh;
+    box-shadow: -2px 14px 19px rgba(0, 0, 0, 0.5);
+}
 
 .sideBar__hamburger {
     display: flex;
     align-items: center;
-    gap: 3.6rem;
+    gap: 4.9rem;
     padding-top: 2.5rem;
 }
 
@@ -70,6 +74,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-bottom: 6rem;
 }
 
 .logout__button:hover {
