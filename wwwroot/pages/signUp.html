@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Technologist IHM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="winbar__nav">
+            <menu class="winbar--menu">
+                <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../../app/win/minimize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../../app/win/maximize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../../app/win/close_icon.svg"></button></li>
+            </menu>
+        </nav>
+    </header>
+    
+    <main>
+        <button class="signUp__return"><img class="signUp__return--arrow" src="../../resources/images/assets/Components/left_arrow.svg">Voltar</button>
+        <div class="signUp__container">
+            
+            <img class="signUp__tecnologistic" src="../../resources/icons/Tecnologistic_logo.svg">
+        
+            <div class="signUp__line"></div>
+        
+            <p class="signUp__text">Insira as informações de sua conta. A ativação da sua será informada via e-mail.</p>
+            
+            <form class="signUp__form" onsubmit="sendRegister()">
+                <input type="text" class="signUp__input" placeholder="Nome">
+                <input type="text" class="signUp__input" placeholder="Sobrenome">
+                <input type="email" class="signUp__input" placeholder="E-mail">
+                <input type="password" class="signUp__input" placeholder="Senha">
+                <input type="password" class="signUp__input" placeholder="Confirmar senha">
+                
+                <button type="submit" class="">Enviar e-mail para confirmar cadastro</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script src="../../app/win/winbar.js"></script>
+

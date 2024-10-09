@@ -25,7 +25,7 @@
                 
                 <section class="login__section"> <!-- Formulário de login -->
                     
-                    <div><img class="login__tecnologistic" src="../resources/images/assets/Components/logo-tecnologisctic.png" alt="Logo Tecnologistic"></div>
+                    <div><img class="login__tecnologistic" src="../resources/icons/Tecnologistic_logo.svg" alt="Logo Tecnologistic"></div>
                     
                     <img class="login__guest" src="../resources/images/assets/Components/user-guest.svg" alt="Foto usuário convidado">
                     
@@ -33,17 +33,17 @@
                     
                     <div>
                         <form class="login__inputs" id="loginAccess">
-                            <input class="login_inputs--field" placeholder="Email" type="text">
+                            <input class="login_inputs--field" placeholder="Email" type="email">
                             <input class="login_inputs--field" type="password" placeholder="Senha">
                         </form>
                     </div>
     
                     <div class="login__buttons">
                         <div>
-                            <button class="login__buttons--login" onclick="homeAccess()">Entrar</button> <!-- Tirar href depois da validaÃ§Ã£o -->
-                            <button class="login__buttons--forgot" onclick="forgotPassword()">Esqueci minha senha</button>
+                            <button class="login__buttons--login" onclick="homeAccess('homePage')">Entrar</button> <!-- TODO: Fazer o submit do formulário e depois entrar na função homeAccess() -->
+                            <a class="login__buttons--forgot"  href="pages/signIn.html">Esqueci minha senha</a>
                         </div>
-                        <button class="login__buttons--register">Cadastrar</button>
+                        <a class="login__buttons--register" href="pages/signUp.html" >Cadastrar</a>
                     </div>
     
                 </section>
