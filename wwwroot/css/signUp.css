@@ -10,11 +10,17 @@ main {
     gap: 1rem;
     color: var(--color-fourth);
     font-weight: 500;
+    padding: 1rem 0 0 1rem;
 }
 
 .signUp__return--arrow {
     width: 2rem;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.signUp__return--arrow:hover {
+    fill: var(--color-sixth);
 }
 
 .signUp__container {
@@ -56,4 +62,21 @@ main {
     height: 2.7rem;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
+}
+
+.signUp__input, .signUp__sendEmail {
+    width: 25rem;
+}
+
+.signUp__sendEmail {
+    background-color: var(--color-fourth);
+    color: var(--color-first);
+    height: 3.25rem;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.signUp__sendEmail:hover {
+    background-color: var(--color-sixth);
 }
