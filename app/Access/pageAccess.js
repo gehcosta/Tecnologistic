@@ -14,21 +14,22 @@
 // }
 
 function homeAccess(url) {
-    switch (url) {
-        case 'homePage':
-            // TODO: Fazer verificação de token e id do usuário aqui
-            window.location.href = "../wwwroot/pages/homePage.html";
+        switch (url) {
+            case 'homePage':
+                // TODO: Fazer verificação de token e id do usuário aqui
+                window.location.href = "../wwwroot/pages/homePage.html";
 
-            break;
-        case 'forgotPassword':
-            accessPage('homePage');
-            break;
-        case 'signUp':
-            accessPage('signUp');
-            break;
-        default:
-            window.location.href = "../wwwroot/index.html";
-    }
+                break;
+            case 'forgotPassword':
+                accessPage('homePage');
+                break;
+            case 'signUp':
+                accessPage('signUp');
+                break;
+            default:
+                window.location.href = "../../wwwroot/index.html";
+                break;
+        }
 }
 
 

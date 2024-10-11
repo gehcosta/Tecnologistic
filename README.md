@@ -22,4 +22,20 @@ Ordem alfabética:
 
 Desenvolver e implementar um sistema de automação para uma esteira industrial, utilizando visão computacional e controle microcontrolado, com o intuito de melhorar a eficiência e precisão dos processos logísticos na empresa fictícia Tecnologistic. O sistema, gerenciado pelo software SCEUI, será capaz de analisar, contabilizar e controlar o transporte de objetos em tempo real, visando reduzir a interferência humana e otimizar o fluxo operacional. Este projeto será desenvolvido como parte dos requisitos para a conclusão do curso de Engenharia da Computação na UNIP - Universidade Paulista.
 
+# Tecnologias
 
+- HTML
+- CSS
+- JavaScript
+- Python
+- C++
+- Azure
+
+# Instalação
+
+Para executar o projeto, basta instalar as dependências necessárias e executar o arquivo principal. Siga as instruções abaixo:
+
+1. Instale a versão mais recente do <code>Python</code> em seu computador.
+2. Instale a versão mais recente do <code>Node.js</code> em seu computador.
+2. Depois baixe as dependências do electron.js com o comando <code>npm init</code>.
+3. Execute o arquivo principal do projeto com o comando <code>npm start</code>.

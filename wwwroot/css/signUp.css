@@ -14,7 +14,7 @@ main {
 }
 
 .signUp__return--arrow {
-    width: 2rem;
+    width: 1.5rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
@@ -46,7 +46,9 @@ main {
 .signUp__text {
     font-weight: 500;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-inline: 5rem;
+    text-align: center;
 }
 
 .signUp__form {
@@ -65,7 +67,7 @@ main {
 }
 
 .signUp__input, .signUp__sendEmail {
-    width: 25rem;
+    width: auto;
 }
 
 .signUp__sendEmail {

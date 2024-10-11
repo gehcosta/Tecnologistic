@@ -4,6 +4,15 @@ main {
     align-items: flex-start;
 }
 
+.homepage__tecnologistic {
+    background-image: url('../../resources/icons/Tecnologistic_logo.svg');
+    background-size: 40%;
+    background-position: 40% 45%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
 .sideBar {
     display: flex;
     flex-direction: column;
