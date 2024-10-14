@@ -115,3 +115,25 @@
     box-shadow: 0 3px 14px 0 rgba(0,0,0,0.08);
 
 }
+
+/*========= Log ===========*/
+.controlPage__logPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.875rem;
+}
+.logPanel__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-fourth);
+}
+
+.logPanel__tr {
+    border-bottom: 1px solid #E0E0E0;
+}
+.logPanel__th {
+    font-weight: 500;
+    color: var(--color-fifth);
+    padding-bottom: 1rem;
+}
