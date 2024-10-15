@@ -8,7 +8,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     fullscreen: false,
     width: 1280,
-    minWidth: 530,
+    minWidth: 540,
     height: 720,
     minHeight: 700,
     frame: false,

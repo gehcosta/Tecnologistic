@@ -63,8 +63,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     background-color: #f5f5f5;
-    line-height: 1;
     overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -72,12 +74,12 @@ header {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);
     border-bottom: 1px solid #ccc;
     -webkit-app-region: drag;
-    height: 30px;
+    height: 31px;
 }
 
-main {
-    height: 100dvh;
-}
+/*main {*/
+/*    height: 100dvh;*/
+/*}*/
 
 ol, ul {
     list-style: none;
