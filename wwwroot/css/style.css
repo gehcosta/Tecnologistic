@@ -77,10 +77,6 @@ header {
     height: 31px;
 }
 
-/*main {*/
-/*    height: 100dvh;*/
-/*}*/
-
 ol, ul {
     list-style: none;
 }
@@ -107,6 +103,24 @@ button {
     background: none;
     background-color: transparent;
     border: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+
+
+/* Cor do botão da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    /*background-color: #535353;*/
+    background-color: #535353;
+    border-radius: 5px; /* Arredondamento dos cantos */
+}
+
+/* Cor do botão ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3a3a3a;
 }
 
 .winbar__nav{
