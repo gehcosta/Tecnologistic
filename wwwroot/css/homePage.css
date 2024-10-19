@@ -92,6 +92,8 @@ main {
     display: none;
     font-weight: 500;
     color: var(--color-second);
+    transition: 0.3s ease;
+    padding-top: 5px;
 }
 
 .sideBar__bottom {
@@ -99,8 +101,6 @@ main {
     align-items: center;
     transition: 0.3s ease;
 }
-
-
 
 .bottom__line {
     background-image: url('../../resources/images/assets/Components/line.svg');
