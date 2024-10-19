@@ -39,6 +39,14 @@
     margin-bottom: 1rem;
 }
 
+.statusPanel__table {
+    width: calc(100% - 2rem);
+}
+
+.statusPanel__td {
+    padding: 0.6rem 0
+}
+
 .panelControl__line, .statusPanel__line {
     width: 12rem;
     margin-block-start: 0;
@@ -54,8 +62,6 @@
     font-weight: 500;
     margin-bottom: 1rem;
 }
-
-/*======== Painel de controle ========*/
 
 .panelControl__buttons {
     display: flex;
@@ -106,7 +112,7 @@
 /*======== Camera =======*/
 
 .controlPage__camera {
-    max-width: 46rem;    
+    min-width: 21rem;
     width: 43%;
     border: 1px solid #E0E0E0;
     border-radius: 8px;

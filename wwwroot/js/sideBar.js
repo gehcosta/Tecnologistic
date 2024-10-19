@@ -1,6 +1,6 @@
 const sideBar = document.getElementById('sideBar');
 const hamburguer = document.getElementById('hamburguer');
-var buttonsText = document.querySelectorAll('.bottom__button--text');
+const buttonsText = document.querySelectorAll('.bottom__button--text');
 
 let isExpanded = false;
 let isAnimating = false;
