@@ -125,9 +125,9 @@ main {
     background-color: var(--color-fifth);
     color: var(--color-first);
     border-radius: 25px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease;
     cursor: pointer;
-    width: auto;
+    width: 3.25rem;
 }
 
 .bottom__button.expanded {
