@@ -1,16 +1,29 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const sideBar = document.getElementById('sideBar');
-//     const sideBarContent = document.getElementById('sideBarContent');
-//     const sideBarClose = document.getElementById('sideBarClose');
-//     const sideBarOpen = document.getElementById('sideBarOpen');
-//
-//     sideBarOpen.addEventListener('click', function () {
-//         sideBar.style.width = "250px";
-//         sideBarContent.style.display = "block";
-//     });
-//
-//     sideBarClose.addEventListener('click', function () {
-//         sideBar.style.width = "0";
-//         sideBarContent.style.display = "none";
-//     });
-// }
+const sideBar = document.getElementById('sideBar');
+const hamburguer = document.getElementById('hamburguer');
+
+let isExpanded = false;
+
+const originalWidth = '3.2rem'; 
+
+const expandedWidth = '16rem'; 
+
+hamburguer.addEventListener('click', function() {
+    if (isExpanded) {
+        setTimeout(() => {
+            sideBar.style.width = originalWidth;
+        }, 250);
+        for (let i = 0; i <= 3; i++) {
+            document.getElementById(`page[${i}]`).style.width = '3.2rem';
+        }
+        
+    } else {
+        sideBar.style.width = expandedWidth;
+        for (let i = 0; i <= 3; i++) {
+            setTimeout(() => {
+                document.getElementById(`page[${i}]`).style.width = '16rem';
+            }, 300 * i);
+        }
+    }
+    // Inverte o estado
+    isExpanded = !isExpanded;
+});

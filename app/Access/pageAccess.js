@@ -65,6 +65,6 @@ function logoutUser(){
     // localStorage.removeItem('token');
     // localStorage.removeItem('userId');
     window.location.href = "../../wwwroot/index.html";
-}
+}       
 
 

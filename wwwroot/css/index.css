@@ -68,7 +68,7 @@
     width: 12rem;
     height: 2.7rem;
     border-radius: 8px;
-    background-color: #4B9447;
+    background-color: var(--color-fourth);
     color: #FFF;
     font-size: 0.8rem;
     border: none;
@@ -89,7 +89,7 @@
 }
 
 .login__buttons--login:hover, .login__buttons--forgot:hover, .login__buttons--register:hover {
-    background-color: #3A7E3A;
+    background-color: var(--color-sixth);
     cursor: pointer;
 }
 

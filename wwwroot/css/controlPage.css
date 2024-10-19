@@ -38,15 +38,10 @@
 
 .panelControl__line, .statusPanel__line {
     width: 12rem;
-    display: block;
     margin-block-start: 0;
     margin-block-end: 2em;
     margin-inline-start: auto;
     margin-inline-end: auto;
-    unicode-bidi: isolate;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
     border: 1px solid rgb(217, 217, 217);
 }
 
@@ -56,6 +51,8 @@
     font-weight: 500;
     margin-bottom: 1rem;
 }
+
+/*======== Painel de controle ========*/
 
 .panelControl__buttons {
     display: flex;
@@ -107,7 +104,7 @@
 
 .controlPage__camera {
     max-width: 46rem;    
-    width: 100%;
+    width: 43%;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
     box-shadow: 0 3px 14px 0 rgba(0,0,0,0.08);
@@ -126,11 +123,11 @@
     color: var(--color-fourth);
 }
 
-.logPanel__tr {
-    border-bottom: 1px solid #E0E0E0;
+.logPanel__tr, .statusPanel__tr {
+    border-bottom: 2px solid #E0E0E0;
 }
-.logPanel__th {
+.logPanel__th, .statusPanel__th {
     font-weight: 500;
     color: var(--color-fifth);
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
 }
