@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Technologist IHM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="winbar__nav">
+            <menu class="winbar--menu">
+                <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../../app/win/minimize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../../app/win/maximize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../../app/win/close_icon.svg"></button></li>
+            </menu>
+        </nav>
+    </header>
+    
+    <main>
+        <button class="signUp__return" onclick="homeAccess('')">
+            <svg class="signUp__return--arrow" xmlns="http://www.w3.org/2000/svg" fill="var(--color-fourth)" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.3l105.3-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>Voltar
+        </button>
+        <div class="signUp__container">
+            
+            <img class="signUp__tecnologistic" src="../../resources/icons/Tecnologistic_logo.svg">
+        
+            <div class="signUp__line"></div>
+        
+            <p class="signUp__text">Insira as informações de sua conta. A ativação da sua será informada via e-mail.</p>
+            
+            <form class="signUp__form" onsubmit="sendRegister()">
+                <input type="text" class="signUp__input" placeholder="Nome">
+                <input type="text" class="signUp__input" placeholder="Sobrenome">
+                <input type="email" class="signUp__input" placeholder="E-mail">
+                <input type="password" class="signUp__input" placeholder="Senha">
+                <input type="password" class="signUp__input" placeholder="Confirmar senha">
+                
+                <button type="submit" class="signUp__sendEmail">Enviar e-mail para confirmar cadastro</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script src="../../app/win/winbar.js"></script>
+<script src="../../app/Access/pageAccess.js"></script>
+

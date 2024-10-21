@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="../css/controlPage.css">
+
+<div class="controlPage">
+    <section class="controlPage__controlPanel">
+        <div class="panelControl__statusPanel">
+            <h3 class="statusPanel__title">Painel de status</h3>
+            <hr class="statusPanel__line">
+            <table class="statusPanel__table">
+                <tbody>
+                <tr class="statusPanel__tr">
+                    <th class="statusPanel__th" style="text-align: left">Hardware</th>
+                    <th class="statusPanel__th">Status</th>
+                </tr>
+                <tr class="statusPanel__tr">    
+                    <td class="statusPanel__td">Webcam</td>
+<!--                    <td>TODO: colocar dados aqui</td>-->
+                </tr>                
+                <tr class="statusPanel__tr">
+                    <td class="statusPanel__td">Braço mecânico</td>
+<!--                    <td>TODO: colocar dados aqui</td>-->
+                </tr>                
+                <tr class="statusPanel__tr">
+                    <td class="statusPanel__td">Alarme</td>
+<!--                    <td>TODO: colocar dados aqui</td>-->
+                </tr>                
+                <tr class="statusPanel__tr">
+                    <td class="statusPanel__td">Sistema</td>
+<!--                    <td> TODO: colocar dados aqui</td>-->
+                </tr>               
+                <tr class="statusPanel__tr">
+                    <td class="statusPanel__td">Esteira</td>
+<!--                    <td> TODO: colocar dados aqui</td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="panelControl__panelControl">
+            <h3 class="panelControl__title">Painel de controle</h3>
+            <hr class="panelControl__line">
+            <div class="panelControl__buttons">
+                <button class="buttons__start" onclick="startEngine()"><img class="buttons__img" src="../../resources/images/assets/Components/start.svg">Ligar</button>
+                <button class="buttons__stop"  onclick="stopEngine()"><img class="buttons__img" src="../../resources/images/assets/Components/stop.svg">Parar</button>
+                <button class="buttons__off" onclick="offEngine()"><img class="buttons__img" src="../../resources/images/assets/Components/off.svg">Desligar</button>
+            </div>
+        </div>
+        <div class="controlPage__camera">
+        <!-- TODO: Adicionar camera aqui -->
+            <iframe src="https://www.retrogames.cc/embed/17336-donkey-kong-country-2-diddy-s-kong-quest-usa-en-fr-rev-a.html" width="100%" height="400" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+        </div>
+    </section>
+    
+    <section class="controlPage__logPanel">
+        <h3 class="logPanel__title">Log de registros</h3>
+        <table>
+            <thead>
+            <tr class="logPanel__tr">
+                <th class="logPanel__th" style="text-align: left;">Status</th>
+                <th class="logPanel__th" style="text-align: right;">Tempo de execução</th>
+                <th class="logPanel__th" style="text-align: right;">Modelo</th>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <!-- TODO: Colocar os registros com o banco de dados-->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>

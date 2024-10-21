@@ -1,9 +1,190 @@
-.aside__hamburger {
+main {
+    flex: 1;
     display: flex;
+    flex-direction: row;
+    margin-left: 5.438rem;
+    overflow-x: hidden; 
 }
 
-.buttons__userProfile {
-    background-image: url("resources/images/assets/Components/user-white.svg");
-    background-repeat: no-repeat;
-    width: 50px;
+#menuPages {
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box;
+    flex-grow: 1; 
+    overflow-y: auto; 
 }
+
+.homepage__tecnologistic {
+    background-image: url('../../resources/icons/Tecnologistic_logo.svg');
+    background-size: 40%;
+    background-position: 45% 45%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+}
+
+.sideBar {
+    position: fixed; /* Mantém a sidebar fixa na lateral esquerda */
+    bottom: 0;
+    left: 0;
+    height: calc(100% - 32px); /* 100% da altura da tela */
+    width: 3.2rem; /* Define uma largura fixa para a sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 1.125rem;
+    box-shadow: -2px 14px 19px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-first);
+    transition: width 0.3s ease;
+}
+
+.sideBar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sideBar__hamburger {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 4px;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--color-fourth);
+    stroke-width:6;
+    stroke-linecap:round;
+}
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+.hamburger__text {
+    display: none;
+    font-weight: 500;
+    color: var(--color-second);
+    transition: 0.3s ease;
+    padding-top: 5px;
+}
+
+.sideBar__bottom {
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.bottom__line {
+    background-image: url('../../resources/images/assets/Components/line.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: auto;
+}
+
+.bottom__container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom__button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 3rem;
+    background-color: var(--color-fifth);
+    color: var(--color-first);
+    border-radius: 25px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    width: 3.25rem;
+}
+
+.bottom__button.expanded {
+    width: 16rem;
+}
+
+.bottom__button--text {
+    display: none;
+}
+
+.bottom__button:hover {
+    background-color: var(--color-fourth);
+}
+
+.bottom__button:focus {
+    transform: scale(0.99); /* Diminui levemente o botão ao clicar */
+    background-color: var(--color-fourth);
+}   
+
+.button__userProfile, .button__graph, .button__webcam, .button__stock {
+    padding: 5px;
+    width: 30px;
+}
+
+.button__userProfile {
+    width: 30px;
+}
+
+.logout__button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    margin-left: .6rem;
+    cursor: pointer;
+}
+
+.logout__button--svg {
+    stroke: var(--color-fourth);
+    transition: 0.3s ease-in-out;
+}
+
+.logout__button--svg:hover {
+    stroke: var(--color-sixth);
+}
+
+.logout__text {
+    display: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-fourth);
+}
+
+@media (max-width: 1028px) {
+    .homepage__tecnologistic {
+        background-size: 60%;
+    }
+    
+}
+

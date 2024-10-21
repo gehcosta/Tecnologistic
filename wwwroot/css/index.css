@@ -23,6 +23,10 @@
     width: 100%;
 }
 
+.login__tecnologistic {
+    width: 13rem;
+}
+
 .login__guest {
     width: 30%;
     margin-top: 2.7rem;
@@ -32,7 +36,7 @@
     background-image: url('../../resources/images/assets/Components/line.svg');
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 24rem;
     height: 1rem;
     margin-top: 2rem;
 }
@@ -46,7 +50,7 @@
 }
 
 .login_inputs--field {
-    width: 25.5rem;
+    width: 23.5rem;
     padding-left: 10px;
     height: 2.7rem;
     margin: 1rem 2rem 0 2rem;
@@ -64,19 +68,28 @@
     width: 12rem;
     height: 2.7rem;
     border-radius: 8px;
-    background-color: #4B9447;
+    background-color: var(--color-fourth);
     color: #FFF;
     font-size: 0.8rem;
     border: none;
     transition: 0.3s ease-in-out;
     margin-top: 1rem;
+    text-decoration: none;
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
 }
+.login__buttons--forgot {
+    padding: 14px 2rem;
+}
+
 .login__buttons--register {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
     width: 24rem;
 }
 
 .login__buttons--login:hover, .login__buttons--forgot:hover, .login__buttons--register:hover {
-    background-color: #3A7E3A;
+    background-color: var(--color-sixth);
     cursor: pointer;
 }
 
