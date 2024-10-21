@@ -1,16 +1,74 @@
-<aside>
-    <div class="aside__hamburger">
-        <button class="">H</button>
-        <p class="">Menu</p>
-    </div>
-    
-    <div class="aside__line"></div>
-    
-    <div class="aside__buttons">
-        <button class="aside__buttons"><span class="buttons__userProfile"></span>Perfil do Usuário</button>
-        <button class="aside__buttons"><img src="../../resources/images/assets/Components/user-white.svg">Dashboard</button>
-        <button class="aside__buttons"><img src="../../resources/images/assets/Components/user-white.svg">Webcam</button>
-        <button class="aside__buttons"><img src="../../resources/images/assets/Components/user-white.svg">Estoque</button>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <title>Technologist IHM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="winbar__nav">
+            <menu class="winbar--menu">
+                <li><button style="-webkit-app-region: no-drag;" id="minimizeButton"><img class="winbar--menu--minimize" src="../../app/win/minimize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="maximizeButton"><img class="winbar--menu--toggleFullscreen" src="../../app/win/maximize_icon.svg"></button></li>
+                <li><button style="-webkit-app-region: no-drag;" id="closeButton"><img class="winbar--menu--close" src="../../app/win/close_icon.svg"></button></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sideBar" id="sideBar">
+            <div class="sideBar__container">
+                <span class="sideBar__hamburger flex__center">
+                    <button>
+                        <svg class="ham hamRotate ham1" id="hamburguer" viewBox="18 15 58 60" width="31" xmlns="http://www.w3.org/2000/svg"><path class="line top" d="M30 33h40s9.044-.655 9.044-8.509-8.024-11.958-14.9-10.859C57.27 14.731 50.509 17.804 50.509 30v40"/><path class="line middle" d="M30 50h40"/><path class="line bottom" d="M30 67h40c12.796 0 15.358-11.718 15.358-26.852 0-15.133-4.787-27.274-16.668-27.274S50.191 19.87 50.255 30l.253 40"/></svg>
+                    </button>
+                    <p class="hamburger__text" id="hamburguerText">Menu</p>
+                </span>
+                
+                <div class="sideBar__bottom" id="bottom">
+                    <div class="bottom__line"></div>
+            
+                    <div class="bottom__container">
+                        <button class="bottom__button" id="page[0]" onclick="accessPage('userConfig')">
+                            <img class="button__userProfile" src="../../resources/images/assets/Components/user-white.svg">
+                            <span class="bottom__button--text">Perfil do Usuário</span>
+                        </button>
+                        <button class="bottom__button" id="page[1]" onclick="accessPage('bi')">
+                            <img class="button__graph" src="../../resources/images/assets/Components/Graph.svg">
+                            <span class="bottom__button--text">Dashboard</span>
+                        </button>
+                        <button class="bottom__button" id="page[2]" onclick="accessPage('controlPage')">
+                            <img class="button__webcam" src="../../resources/images/assets/Components/webcam.svg">
+                            <span class="bottom__button--text">Webcam</span></button>
+                        <button class="bottom__button" id="page[3]" onclick="accessPage('stock')">
+                            <img class="button__stock" src="../../resources/images/assets/Components/stock.svg">
+                            <span class="bottom__button--text">Estoque</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="logout__button" onclick="logoutUser()">
+                <svg class="logout__button--svg" width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.87 24.395H4.125c-1.381 0-2.5-1.439-2.5-3.214V5.107c0-1.773 1.119-3.212 2.5-3.212h8.75M16 17.52l4.375-4.375L16 8.77m-8.125 4.37h12.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="logout__text" id="logoutText">Logout</span>
+            </button>
+        </aside>
         
-    <div>
-</aside>
+        <section id="menuPages">
+<!--            <img src="../../resources/icons/Tecnologistic_logo.svg">-->
+            <div class="homepage__tecnologistic"></div>
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+<script src="../../app/win/winbar.js"></script>
+<script src="../../app/Access/pageAccess.js"></script>
+<script src="../js/sideBar.js"></script>
+
