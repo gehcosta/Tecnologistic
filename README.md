@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/tYhF53d/teclogo.png" width="400"/>
+<img src="https://i.ibb.co/tYhF53d/teclogo.png" alt="Logo Tecnologistic" width="400"/>
 
 
 # SCEUI
@@ -27,6 +27,7 @@ Desenvolver e implementar um sistema de automação para uma esteira industrial,
 - HTML
 - CSS
 - JavaScript
+- Node.js
 - Python
 - C++
 - Azure
@@ -37,5 +38,9 @@ Para executar o projeto, basta instalar as dependências necessárias e executar
 
 1. Instale a versão mais recente do <code>Python</code> em seu computador.
 2. Instale a versão mais recente do <code>Node.js</code> em seu computador.
-2. Depois baixe as dependências do electron.js com o comando <code>npm init</code>.
+2. Depois baixe as dependências do electron.js com o comando <code>npm install --save-dev electron</code>.
 3. Execute o arquivo principal do projeto com o comando <code>npm start</code>.
+
+# Licença
+
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md] para obter detalhes.
