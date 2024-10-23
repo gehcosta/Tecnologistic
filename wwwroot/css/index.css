@@ -64,7 +64,7 @@
     align-items: center;
 }
 
-.login__buttons--login, .login__buttons--forgot, .login__buttons--register {
+.login__buttons--login, .login__buttons--forget, .login__buttons--register {
     width: 12rem;
     height: 2.7rem;
     border-radius: 8px;
@@ -77,7 +77,7 @@
     text-decoration: none;
     text-align: center; /* Centraliza o conteúdo dentro do contêiner */
 }
-.login__buttons--forgot {
+.login__buttons--forget {
     padding: 14px 2rem;
 }
 
@@ -88,7 +88,7 @@
     width: 24rem;
 }
 
-.login__buttons--login:hover, .login__buttons--forgot:hover, .login__buttons--register:hover {
+.login__buttons--login:hover, .login__buttons--forget:hover, .login__buttons--register:hover {
     background-color: var(--color-sixth);
     cursor: pointer;
 }

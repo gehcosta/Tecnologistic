@@ -9,6 +9,6 @@
   "author": "Geovanne H. Costa, Yuri de S. Stavel, Gustavo Dellabarba, Victor W. G. Oliveira",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^31.4.0"
+    "electron": "^31.7.1"
   }
 }
