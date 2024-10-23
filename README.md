@@ -39,7 +39,8 @@ Para executar o projeto, basta instalar as dependências necessárias e executar
 1. Instale a versão mais recente do <code>Python</code> em seu computador.
 2. Instale a versão mais recente do <code>Node.js</code> em seu computador.
 2. Depois baixe as dependências do electron.js com o comando <code>npm install --save-dev electron</code>.
-3. Execute o arquivo principal do projeto com o comando <code>npm start</code>.
+3. Instale as dependências necessárias do projeto.
+4. Execute o arquivo principal do projeto com o comando <code>npm start</code>.
 
 # Licença
 
