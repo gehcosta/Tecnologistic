@@ -1,5 +1,36 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
+const nodemailer = require('nodemailer');
+
+// Configuração do Nodemailer
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",  // Para Gmail
+  port: 587,
+  secure: false,
+  auth: {
+    user: "tecnologisticsceui@gmail.com",
+    pass: "qovi upwy jrud symw ",
+  },
+});
+
+// Função para enviar o e-mail
+async function sendEmail(emailData) {
+  try {
+    const info = await transporter.sendMail({
+      from: '"Tecnologistic" <tecnologisticsceui@gmail.com>', // Endereço do remetente
+      to: emailData.to, // Destinatário
+      subject: emailData.subject, // Assunto
+      text: emailData.message, // Corpo do e-mail (texto)
+      html: emailData.message, // Corpo do e-mail (HTML)
+    });
+
+    console.log("Message sent: %showPopup", info.messageId);
+    return true;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+}
 
 // Mantém a referência global da janela principal para evitar que o Garbage Collector a feche.
 let mainWindow;
@@ -28,15 +59,20 @@ function createWindow() {
   });
 }
 
+// Ouve o evento de envio de e-mail
+ipcMain.on('send-email', async (event, emailData) => {
+  const status = await sendEmail(emailData);
+  event.reply('email-status', status);
+});
+
 // Alterna entre maximizar e restaurar a janela
 ipcMain.on('toggle-fullscreen', () => {
   if (mainWindow.isMaximized()) {
-      mainWindow.unmaximize();  // Restaura a janela ao tamanho original
+    mainWindow.unmaximize();  // Restaura a janela ao tamanho original
   } else {
-      mainWindow.maximize();  // Maximiza a janela
+    mainWindow.maximize();  // Maximiza a janela
   }
 });
-
 
 ipcMain.on('minimize-window', () => {
   mainWindow.minimize();

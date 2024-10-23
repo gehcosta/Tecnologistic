@@ -10,5 +10,9 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^31.7.1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.15"
   }
 }
+
